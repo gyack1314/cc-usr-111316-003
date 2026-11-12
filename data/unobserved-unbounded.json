@@ -1,0 +1,35 @@
+{
+  "kind": "cohort",
+  "years": [
+    2024,
+    2025
+  ],
+  "regions": [
+    "a",
+    "b"
+  ],
+  "survival": [
+    "1",
+    "1/2",
+    "0"
+  ],
+  "historical_buckets": [],
+  "stock_observations": [],
+  "addition_bounds": [],
+  "aggregate_constraints": [],
+  "queries": [
+    {
+      "id": "a-two-years",
+      "coefficients": {
+        "a:2024": "1",
+        "a:2025": "1"
+      }
+    }
+  ],
+  "representative": {
+    "primary": "successive-difference-squares",
+    "secondary": "total-additions",
+    "tertiary": "lexicographic-vector"
+  },
+  "unit": "synthetic-capacity"
+}

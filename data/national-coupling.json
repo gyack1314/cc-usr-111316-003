@@ -1,0 +1,85 @@
+{
+  "kind": "cohort",
+  "years": [
+    2024,
+    2025
+  ],
+  "regions": [
+    "a",
+    "b"
+  ],
+  "survival": [
+    "1",
+    "1/2",
+    "0"
+  ],
+  "historical_buckets": [
+    {
+      "id": "a-pre",
+      "region": "a",
+      "min": "0",
+      "max": "100",
+      "coefficients": {
+        "2024": "1/2",
+        "2025": "0"
+      }
+    }
+  ],
+  "stock_observations": [
+    {
+      "id": "a24",
+      "region": "a",
+      "year": 2024,
+      "lower": "100",
+      "upper": "100"
+    },
+    {
+      "id": "a25",
+      "region": "a",
+      "year": 2025,
+      "lower": "80",
+      "upper": "80"
+    },
+    {
+      "id": "b24",
+      "region": "b",
+      "year": 2024,
+      "lower": "20",
+      "upper": "20"
+    },
+    {
+      "id": "b25",
+      "region": "b",
+      "year": 2025,
+      "lower": "30",
+      "upper": "30"
+    }
+  ],
+  "addition_bounds": [],
+  "aggregate_constraints": [
+    {
+      "id": "national-24",
+      "coefficients": {
+        "a:2024": "1",
+        "b:2024": "1"
+      },
+      "lower": "100",
+      "upper": "100"
+    }
+  ],
+  "queries": [
+    {
+      "id": "a-two-years",
+      "coefficients": {
+        "a:2024": "1",
+        "a:2025": "1"
+      }
+    }
+  ],
+  "representative": {
+    "primary": "successive-difference-squares",
+    "secondary": "total-additions",
+    "tertiary": "lexicographic-vector"
+  },
+  "unit": "synthetic-capacity"
+}
